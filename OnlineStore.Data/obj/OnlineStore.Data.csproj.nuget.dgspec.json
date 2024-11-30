@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Data\\OnlineStore.Data.csproj": {}
+    "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Data\\OnlineStore.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Data\\OnlineStore.Data.csproj": {
+    "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Data\\OnlineStore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Data\\OnlineStore.Data.csproj",
+        "projectUniqueName": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Data\\OnlineStore.Data.csproj",
         "projectName": "OnlineStore.Data",
-        "projectPath": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Data\\OnlineStore.Data.csproj",
+        "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Data\\OnlineStore.Data.csproj",
         "packagesPath": "C:\\Users\\fares\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Data\\obj\\",
+        "outputPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fares\\AppData\\Roaming\\NuGet\\NuGet.Config",

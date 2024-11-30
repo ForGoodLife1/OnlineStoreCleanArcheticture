@@ -16,7 +16,9 @@ namespace OnlineStore.Infrastructure.Repositories
 
         public async Task<List<ProductCatalog>> GetProductCatalogsListAsync()
         {
-            return await _ProductCatalogs.ToListAsync();
+            return await _ProductCatalogs.Include(x => x.ProductImages)
+                                         .Include(x => x.OrderItems)
+                                         .Include(x => x.Reviews).ToListAsync();
         }
     }
 }

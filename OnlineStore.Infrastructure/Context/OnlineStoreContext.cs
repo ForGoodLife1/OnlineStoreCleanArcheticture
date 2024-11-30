@@ -1,6 +1,4 @@
-﻿using EntityFrameworkCore.EncryptColumn.Interfaces;
-using EntityFrameworkCore.EncryptColumn.Util;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OnlineStore.Data.Entities;
@@ -11,7 +9,7 @@ namespace OnlineStore.Infrastructure.Context;
 
 public partial class OnlineStoreContext : IdentityDbContext<User, Role, int, IdentityUserClaim<int>, IdentityUserRole<int>, IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>>
 {
-    private readonly IEncryptionProvider _encryptionProvider;
+    //private readonly IEncryptionProvider _encryptionProvider;
 
     public OnlineStoreContext()
     {
@@ -20,7 +18,7 @@ public partial class OnlineStoreContext : IdentityDbContext<User, Role, int, Ide
     public OnlineStoreContext(DbContextOptions<OnlineStoreContext> options)
         : base(options)
     {
-        _encryptionProvider=new GenerateEncryptionProvider("8a4dcaaec64d412380fe4b02193cd26f");
+        // _encryptionProvider=new GenerateEncryptionProvider("8a4dcaaec64d412380fe4b02193cd26f");
     }
     public DbSet<UserRefreshToken> UserRefreshToken { get; set; }
     public DbSet<User> User { get; set; }

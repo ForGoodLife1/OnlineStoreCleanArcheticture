@@ -16,7 +16,9 @@ namespace OnlineStore.Infrastructure.Repositories
 
         public async Task<List<Customer>> GetCustomersListAsync()
         {
-            return await _customers.Include(x => x.Order).ToListAsync();
+            return await _customers.Include(x => x.Order).ThenInclude(x => x.OrderItems)
+                                   .Include(x => x.Reviews)
+                                   .ToListAsync();
         }
     }
 }

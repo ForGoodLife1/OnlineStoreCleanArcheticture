@@ -5302,11 +5302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Service\\OnlineStore.Service.csproj",
+      "projectUniqueName": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Service\\OnlineStore.Service.csproj",
       "projectName": "OnlineStore.Service",
-      "projectPath": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Service\\OnlineStore.Service.csproj",
+      "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Service\\OnlineStore.Service.csproj",
       "packagesPath": "C:\\Users\\fares\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Service\\obj\\",
+      "outputPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5324,11 +5324,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Data\\OnlineStore.Data.csproj": {
-              "projectPath": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Data\\OnlineStore.Data.csproj"
+            "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Data\\OnlineStore.Data.csproj": {
+              "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Data\\OnlineStore.Data.csproj"
             },
-            "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\fares\\source\\repos\\OnlineStore.CleanArcheticture\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj"
+            "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\fares\\source\\repos\\CleanArcheticture\\OnlineStore.CleanArcheticture\\Back\\OnlineStore.Infrastructure\\OnlineStore.Infrastructure.csproj"
             }
           }
         }
@@ -5376,13 +5376,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }

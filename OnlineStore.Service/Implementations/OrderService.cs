@@ -14,6 +14,8 @@ namespace OnlineStore.Service.Implementations
             _orderRepository=orderRepository;
         }
 
+
+
         public async Task<Order> GetOrderByIdAsync(int id)
         {
             var customer = await _orderRepository.GetTableNoTracking().Where(x => x.OrderId.Equals(id))
@@ -21,6 +23,13 @@ namespace OnlineStore.Service.Implementations
                                                    .Include(x => x.Payments)
                                                    .Include(x => x.Shippings).FirstOrDefaultAsync();
             return customer;
+        }
+
+
+
+        public async Task<bool> IsOrderIdExist(int orderId)
+        {
+            return await _orderRepository.GetTableNoTracking().AnyAsync(x => x.OrderId.Equals(orderId));
         }
     }
 }

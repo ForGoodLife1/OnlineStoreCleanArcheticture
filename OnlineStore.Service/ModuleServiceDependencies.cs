@@ -17,7 +17,11 @@ namespace OnlineStore.Service
             services.AddTransient<IEmailsService, EmailsService>();
             services.AddTransient<IApplicationUserService, ApplicationUserService>();
             services.AddTransient<ICurrentUserService, CurrentUserService>();
-            services.AddTransient<IFileService, FileService>();
+            services.AddTransient<IShippingService, ShippingService>();
+            services.AddTransient<IReviewService, ReviewService>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IProductCatalogService, ProductCatalogService>();
+            services.AddTransient<IOrderItemService, OrderItemService>();
             return services;
 
         }

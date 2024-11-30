@@ -1,4 +1,5 @@
-﻿using OnlineStore.Data.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineStore.Data.Entities;
 using OnlineStore.Infrastructure.Abstracts;
 using OnlineStore.Service.Abstracts;
 
@@ -13,9 +14,16 @@ namespace OnlineStore.Service.Implementations
             _orderItemRepository=orderItemRepository;
         }
 
-        public async Task<List<OrderItem>> GetOrderItemListAsync()
+        public async Task<OrderItem> GetOrderItemByIdAsync(int id)
         {
-            return await _orderItemRepository.GetOrderItemsListAsync();
+            var orderItem = await _orderItemRepository.GetTableNoTracking().Where(x => x.OrderId.Equals(id))
+                                                      .Include(x => x.Order).FirstOrDefaultAsync();
+            return orderItem;
+        }
+
+        public Task<bool> IsOrderItemIdExist(int orderItemId)
+        {
+            throw new NotImplementedException();
         }
     }
 }
